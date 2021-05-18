@@ -1,0 +1,42 @@
+<app-navigation [page]="page"></app-navigation>
+
+<body>
+
+
+
+  <div class="p-grid">
+
+    <div class="p-col-4 p-offset-4">
+      <div class="container">
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Ime</th>
+            <th>Opis</th>
+            <th> ↓ </th>
+            <th> ↑ </th>
+            <th> X </th>
+          </tr>
+          <tr *ngFor="let list of lista; let i = index">
+            <td>{{list.id}} </td>
+            <td>{{list.name}}</td>
+            <td>{{list.opis}}</td>
+            <td> <button *ngIf="i != zadnjiunizu" (click)="GoDownPosition(i)">down</button></td>
+            <td> <button *ngIf="i != 0" (click)="GoUpPosition(i)">up</button></td>
+            <td> <button (click)="DeleteEntry(i)">delete</button></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td> <input type="text" class="form-control" [(ngModel)]="dodajlisti.name"></td>
+            <td> <input type="text" class="form-control" [(ngModel)]="dodajlisti.opis"></td>
+            <td> <button (click)="SaveEntry()">Add</button></td>
+
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>

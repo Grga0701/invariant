@@ -1,0 +1,51 @@
+.button-one{
+    margin-top: 2%;
+    font-size: 200%;
+    background-color:  white;
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    color:  #1d1d1d;
+}
+
+.button-two{
+    margin-top: 2%;
+    font-size: 200%;
+    background-color:  rgba(1,1,1,0);
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    color:  white;
+    border: none
+}
+
+
+.logo{
+    margin-top: 1%;
+    margin-left: 10%;
+    height: 100px;
+}
+
+nav{
+    background-color:  #1d1d1d;
+    position: sticky;
+    top: 0;
+    height: 200px;
+}
+.b{
+    margin-left: 25px; 
+    margin-right: 25px; 
+    padding-left: 20px;
+    padding-right: 30px;
+    margin-top: 2%;
+    padding: 20px;
+    font-size: 200%;
+    background-color:  rgba(1,1,1,0);
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    color:  white;
+    border: none
+}
+.a{
+    width: 100px;
+    margin-top: 2%;
+    font-size: 200%;
+    background-color:  white;
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    color:  #1d1d1d;
+}

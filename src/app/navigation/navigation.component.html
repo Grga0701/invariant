@@ -1,0 +1,18 @@
+<nav>
+
+  <div class="p-grid">
+
+    <div class="p-col-4">
+      <img src="assets/img/logo.png" alt="logo" class="logo">
+    </div>
+    <div class="p-col-8">
+      <button [ngClass]="!isTimeWeb ? 'button-one' : 'button-two'" (click)="goToPage('timeweb')"><p style="margin: 25px; padding-left: 20px;padding-right: 30px;">TimeWeb</p></button>
+      <button *ngIf="!isTimeWeb" class="button-two" (click)="goToPageSection('webdizajn')" ><p style="margin: 25px; padding-left: 20px;padding-right: 30px;">web dizajn</p></button>
+      <button *ngIf="!isTimeWeb" class="button-two" (click)="goToPageSection('onama')" ><p style="margin: 25px; padding-left: 20px;padding-right: 30px;">o nama</p></button>
+      <button *ngIf="!isTimeWeb" class="button-two" (click)="goToPageSection('kontakt')" ><p style="margin: 25px; padding-left: 20px;padding-right: 30px;">kontak</p></button>
+      <button [ngClass]="!isList ? 'button-one' : 'button-two'" (click)="goToPage('list')"><p style="margin: 25px; padding-left: 20px;padding-right: 30px;">list {{lista}}</p></button>
+
+    </div>
+  </div>
+
+</nav>
